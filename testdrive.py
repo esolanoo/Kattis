@@ -1,0 +1,7 @@
+x = input().split()
+p1 = int(x[1])-int(x[0])
+p2 = int(x[2])-int(x[1])
+if (1 if p1 < 0 else 0) != (1 if p2 < 0 else 0): print("turned")
+elif abs(p1) == abs(p2): print("cruised")
+elif abs(p1) > abs(p2): print("braked")
+elif abs(p1) < abs(p2): print("accelerated")
